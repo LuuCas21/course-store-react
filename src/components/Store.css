@@ -1,0 +1,10 @@
+.store__wrapper {
+    width:60%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:#eee;
+    border:1px solid black;
+    margin:0 auto;
+}

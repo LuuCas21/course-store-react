@@ -1,0 +1,141 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.app {
+  display:flex;
+  flex-direction:column;
+}
+
+.store__wrapper {
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  color:#eee;
+  padding:30px 0;
+}
+
+.store__wrapper .currency__btns {
+  width:100%;
+  display:flex;
+  justify-content:space-evenly;
+  margin:30px 0;
+  gap:10px;
+  align-items:baseline;
+}
+
+.store__wrapper .currency__btns > .currency__div {
+  display:flex;
+  gap:10px;
+}
+
+.store__wrapper .currency__btns > .search_filter__div > input {
+  padding:6px 15px;
+  outline:none;
+  border:1px solid #eee;
+  margin-right:8px;
+}
+
+.store__wrapper .currency__btns > .search_filter__div > select {
+  padding:6px 15px;
+  outline:none;
+  border:none;
+}
+
+.courses__wrapper {
+  width:70%;
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+  align-items:center;
+  justify-content:center;
+}
+
+.courses {
+  width:250px;
+  height:auto;
+  border:1px solid #284ea7;
+  list-style-type:none;
+}
+
+.courses > .courses__image {
+  width:100%;
+  height:130px;
+}
+
+.courses > .courses__image > img {
+  width:100%;
+  height:130px;
+}
+
+.courses > .courses__name {
+  padding:20px;
+  text-align:justify;
+  background-color:#284ea7;
+}
+
+.courses > .courses__description {
+  width:100%;
+  padding:20px;
+  text-align:justify;
+}
+
+.courses > .courses__price {
+  padding:20px;
+  text-align:justify;
+  display:flex;
+  justify-content:space-between;
+  align-items: baseline;
+  background-color:#284ea7;
+}
+
+.courses > .courses__price > .btn__buy {
+  padding:4px 15px;
+  background-color:#28a745;
+  border:none;
+  cursor:pointer;
+  border-radius:4px;
+  transition:all 0.2s ease-in-out;
+}
+
+.courses > .courses__price > .btn__buy:hover {
+  background-color:rgba(40, 167, 69, 0.75);
+}
+
+.btn__component {
+  padding:4px 15px;
+  background-color:#f8f9fa;;
+  border:none;
+  cursor:pointer;
+  border-radius:4px;
+  transition:all 0.2s ease-in-out;
+}
+
+.btn__component:hover {
+  background-color:#eee;
+}
+
+@media screen and (max-width: 579px) {
+  .store__wrapper .currency__btns {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .store__wrapper .currency__btns > .search_filter__div {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+  }
+
+  .store__wrapper .currency__btns > .search_filter__div > input {
+    margin-right:0;
+    margin-bottom:10px;
+  }
+}
